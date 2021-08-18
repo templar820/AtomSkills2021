@@ -3,7 +3,7 @@ start:
 stop:
 	docker-compose down
 production:
-	cat ./_docker/nginx-conf/nginx.conf > ./nginx/nginx.conf
+# 	cat ./_docker/nginx-conf/nginx.conf > ./nginx/nginx.conf
 	docker-compose up -d --scale db_init=0 --scale db_clean=0
 build:
 	docker-compose up -d verdaccio

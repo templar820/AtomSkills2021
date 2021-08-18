@@ -18,6 +18,8 @@ function getFiles(dir, files_){
   return files_;
 }
 
+// const data = {list: [], token:""}
+
 data.list = getFiles('./storage');
 fs.writeFileSync("./storage/.verdaccio-db.json", JSON.stringify(data))
 

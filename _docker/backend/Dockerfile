@@ -6,7 +6,9 @@ ADD /backend /backend
 
 WORKDIR /backend
 
-RUN npm set registry http://${DOCKER_HOST}:4873
+#ARG repo=http://${DOCKER_HOST}:4873
+#
+#RUN npm set registry repo
 RUN npm install
 RUN npm install nodemon -g
 

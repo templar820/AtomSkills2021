@@ -7,8 +7,10 @@ ADD ./.env ./.env
 
 WORKDIR /frontend
 
-RUN npm set registry http://${DOCKER_HOST}:4873
-RUN npm install
+#ARG repo=http://${DOCKER_HOST}:4873
+#
+#RUN npm set registry repo
+RUN npm install --legacy-peer-deps
 
 
 
