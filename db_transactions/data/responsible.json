@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "FIO": "Петров Иван Сидорович",
+    "phone": "+79515874287",
+    "email": "petrov@mail.ru",
+    "disabled": false,
+    "organisations_id": 1
+  },
+  {
+    "id": 2,
+    "FIO": "Ротенберг Самуил Исхакович",
+    "phone": "+79196578245",
+    "email": "",
+    "disabled": false,
+    "organisations_id": 2
+  },
+  {
+    "id": 3,
+    "FIO": "Иванов Иван Иванович",
+    "phone": "+79110000001",
+    "email": "ivanov@nowhere.co",
+    "disabled": false,
+    "organisations_id": 3
+  },
+  {
+    "id": 4,
+    "FIO": "Пример Тестович",
+    "phone": "",
+    "email": "primer@test",
+    "disabled": false,
+    "organisations_id": 1
+  }
+]

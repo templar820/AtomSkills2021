@@ -1,0 +1,21 @@
+@import "~@styles/colors.modules.scss";
+
+.home-page{
+  display: flex;
+  &__navigation {
+    .btn {
+      display: block;
+      padding: 1rem 0;
+      width: 12rem;
+      text-align: center;
+
+      &_active {
+        background: rgba($primary, 0.3);
+      }
+    }
+  }
+  &__content {
+    flex-grow: 1;
+    padding-left: 3rem;
+  }
+}

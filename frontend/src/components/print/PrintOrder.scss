@@ -1,0 +1,72 @@
+.print-order {
+  width: 1000px;
+  padding: 50px 20px;
+
+  .title {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .text-align {
+    text-align: center;
+  }
+
+  .table {
+    border-left: solid 1px black;
+    border-top: solid 1px black;
+  }
+  .raw {
+    display: flex;
+    width: 100%;
+    border-bottom: solid 1px black;
+  }
+  .cell {
+    border-right: solid 1px black;
+    padding: 5px;
+  }
+  .cell-title {
+    font-weight: bold;
+  }
+  .table1 {
+    .cell {
+      width: 50%;
+    }
+    .cell-spec {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .cell-spec1 {
+      width: 300px;
+    }
+    .cell-spec2 {
+      width: 100px;
+    }
+    .cell-spec3 {
+      width: 100px;
+    }
+    .cell-spec4 {
+      width: 100px;
+    }
+    .cell-spec5 {
+      width: auto;
+      flex-grow: 1;
+    }
+
+    .cell-description {
+      height: 150px;
+    }
+  }
+
+  .cost {
+    .cell1 {
+      width: 200px;
+    }
+    .cell2 {
+      width: auto;
+      flex-grow: 1;
+    }
+  }
+
+}

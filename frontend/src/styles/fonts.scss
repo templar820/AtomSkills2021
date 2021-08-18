@@ -1,0 +1,27 @@
+
+@font-face{
+  font-family: 'Rosatom';
+  src: url("~@fonts/Rosatom/Rosatom-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face{
+  font-family: 'Rosatom';
+  src: url("~@fonts/Rosatom/Rosatom-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; //400
+}
+
+@font-face{
+  font-family: 'Rosatom';
+  src: url("~@fonts/Rosatom/Rosatom-bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+* {
+  font-family: Rosatom, sans-serif !important;
+}
+
+

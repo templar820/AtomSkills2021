@@ -1,0 +1,75 @@
+{
+  "common": {
+    "login": "Войти",
+    "logout": "Выйти",
+    "save": "Сохранить",
+    "cancel": "Отмена",
+    "create": "Создать"
+  },
+  "header": {
+    "translations": "Переводы"
+  },
+  "authorizationCard": {
+    "authorization": "Авторизация",
+    "password": "Пароль",
+    "login": "Логин"
+  },
+  "managerPersonalAccount": {
+    "orders": "Заявки",
+    "issuanceOrders": "Заявки на выдачу",
+    "routes": "Маршруты",
+    "button": "Кнопка",
+    "createProduct": "Создание заявки",
+    "updateProduct": "Редактирование заявки",
+    "searchOrder": "Найти заказ",
+    "productName": "Название заявки",
+    "substanceId": "Id вещества"
+  },
+  "createOrderPage": {
+    "createOrder": "Создание заявки",
+    "organization": "Организация",
+    "createOrganization": "Создать организацию",
+    "responsible": "Ответственное лицо",
+    "createResponsible": "Добавить ответственного",
+    "sender": "Отправитель",
+    "recipient": "Получатель",
+    "goods": "Спецификация груза",
+    "goodsName": "Наименование груза",
+    "goodsCreating": "Создание груза",
+    "createGoods": "Создать груз",
+    "requirements": "Особые требования",
+    "count": "Количество",
+    "weight": "Вес",
+    "volume": "Объем",
+    "date": "Дата отправления",
+    "price": "Стоимость"
+  },
+  "createResponsibleDialog": {
+    "createResponsible": "Добавление ответственного лица",
+    "FIO": "Фамилия Имя Отчество"
+  },
+  "createOrganizationDialog": {
+    "createOrganization": "Создание организации",
+    "name": "Название организации",
+    "inn": "ИНН"
+  },
+  "adminPersonalAccount": {
+    "users": "Пользователи"
+  },
+  "createUserDialog": {
+    "createUser": "Создание пользователя",
+    "email": "Адрес электронной почты",
+    "password": "Пароль",
+    "phone": "Телефон",
+    "first_name": "Фамилия",
+    "name": "Имя",
+    "patronymic": "Отчество",
+    "role": "Роль",
+    "pointId": "Точка"
+  },
+  "userList": {
+    "email": "Email"
+  },
+  "carrierPersonalAccount": {
+  }
+}

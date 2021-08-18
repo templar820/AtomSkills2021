@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "email": "admin@admin",
+    "role": "ADMIN",
+    "password": "pass",
+    "name": "Админ",
+    "first_name": "Админов",
+    "patronymic": "Админыч"
+  },
+  {
+    "id": 2,
+    "email": "21@manager",
+    "role": "MANAGER",
+    "password": "1",
+    "name": "Менеджер21",
+    "first_name": "Менеджеров",
+    "patronymic": "Менеджерыч",
+    "point_id": 21
+  },
+  {
+    "id": 3,
+    "email": "22@manager",
+    "role": "MANAGER",
+    "password": "1",
+    "name": "Менеджер22",
+    "first_name": "Менеджеров",
+    "patronymic": "Менеджерыч",
+    "point_id": 22
+  },
+  {
+    "id": 4,
+    "email": "23@manager",
+    "role": "MANAGER",
+    "password": "1",
+    "name": "Менеджер23",
+    "first_name": "Менеджеров",
+    "patronymic": "Менеджерыч",
+    "point_id": 23
+  },
+  {
+    "id": 5,
+    "email": "courier@courier",
+    "role": "COURIER",
+    "password": "1",
+    "name": "Курьер",
+    "first_name": "Курьер",
+    "patronymic": "Курьер"
+  }
+]

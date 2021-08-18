@@ -1,0 +1,138 @@
+[
+  {
+    "id": 1,
+    "name": "Оборудование и запчасти",
+    "count": 25,
+    "weight": 5000,
+    "volume": 16.0,
+    "requirements": "нет",
+    "application_id": 1
+  },
+  {
+    "id": 2,
+    "name": "Коробка 1",
+    "count": 1,
+    "weight": 100,
+    "volume": 1.0,
+    "requirements": "не кантовать",
+    "application_id": 2
+  },
+  {
+    "id": 3,
+    "name": "Коробка 2",
+    "count": 1,
+    "weight": 110,
+    "volume": 1.1,
+    "requirements": "не кантовать",
+    "application_id": 2
+  },
+  {
+    "id": 4,
+    "name": "Ящик 1",
+    "count": 1,
+    "weight": 110,
+    "volume": 1.1,
+    "requirements": "нет",
+    "application_id": 3
+  },
+  {
+    "id": 5,
+    "name": "Ящик 2",
+    "count": 1,
+    "weight": 120,
+    "volume": 1.1,
+    "requirements": "не кантовать",
+    "application_id": 3
+  },
+  {
+    "id": 6,
+    "name": "Контейнер",
+    "count": 1,
+    "weight": 1200,
+    "volume": 12.0,
+    "requirements": "нет",
+    "application_id": 3
+  },
+  {
+    "id": 7,
+    "name": "Оборудование и запчасти",
+    "count": 25,
+    "weight": 5000,
+    "volume": 16.0,
+    "requirements": "нет",
+    "application_id": 4
+  },
+  {
+    "id": 8,
+    "name": "Коробка 2.1",
+    "count": 1,
+    "weight": 100,
+    "volume": 1.0,
+    "requirements": "не кантовать",
+    "application_id": 5
+  },
+  {
+    "id": 9,
+    "name": "Коробка 2.2",
+    "count": 1,
+    "weight": 110,
+    "volume": 1.1,
+    "requirements": "не кантовать",
+    "application_id": 5
+  },
+  {
+    "id": 10,
+    "name": "Ящик 3.1",
+    "count": 1,
+    "weight": 110,
+    "volume": 1.1,
+    "requirements": "нет",
+    "application_id": 6
+  },
+  {
+    "id": 11,
+    "name": "Ящик 3.2",
+    "count": 1,
+    "weight": 120,
+    "volume": 1.1,
+    "requirements": "не кантовать",
+    "application_id": 6
+  },
+  {
+    "id": 12,
+    "name": "Контейнер морской",
+    "count": 1,
+    "weight": 1200,
+    "volume": 12.0,
+    "requirements": "нет",
+    "application_id": 6
+  },
+  {
+    "id": 13,
+    "name": "Контейнер с оборудованием 1",
+    "count": 1,
+    "weight": 120,
+    "volume": 1.2,
+    "requirements": "нет",
+    "application_id": 6
+  },
+  {
+    "id": 14,
+    "name": "Контейнер с оборудованием 2",
+    "count": 1,
+    "weight": 130,
+    "volume": 1.2,
+    "requirements": "нет",
+    "application_id": 6
+  },
+  {
+    "id": 15,
+    "name": "Контейнер с оборудованием 3",
+    "count": 1,
+    "weight": 140,
+    "volume": 1.2,
+    "requirements": "нет",
+    "application_id": 6
+  }
+
+]

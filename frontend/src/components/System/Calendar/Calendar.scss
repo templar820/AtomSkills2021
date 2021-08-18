@@ -1,0 +1,87 @@
+$white:#FFF;
+$active:#000;
+$shadow:#000;
+
+.Calendar {
+  .rc-calendar {
+    background: none !important;
+  }
+  .rc-calendar-today .rc-calendar-date {
+    border: none;
+  }
+  .rc-calendar-date-panel, .rc-calendar-input-wrap {
+    background: $white;
+  }
+  .rc-calendar-range{
+    .rc-calendar-date-panel{
+      display: flex;
+    }
+  }
+
+  .rc-calendar-date:hover {
+    background: transparentize($active, .9);
+  }
+
+  .rc-calendar {
+    font-family: inherit !important;
+    box-shadow: $shadow;
+    border: none;
+  }
+  .rc-calendar-input {
+    color: inherit !important;
+  }
+  .rc-calendar-input-wrap {
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+
+    &:after {
+      content: none;
+    }
+
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+
+    &>div, &>div>div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .rc-calendar-picker {
+    min-width: 100%;
+    left: 0 !important;
+    top: 0 !important;
+
+    .rc-calendar{
+      width: 100%;
+    }
+  }
+
+  .rc-calendar-selected-date .rc-calendar-date, .rc-calendar-selected-date .rc-calendar-date:hover {
+    background: $active;
+  }
+
+  .rc-calendar-selected-day .rc-calendar-date {
+    background: $active;
+    color: $white;
+    &:hover{
+      background: $active;
+    }
+  }
+
+  .rc-calendar-range-part {
+    width: 100%;
+  }
+
+  .rc-calendar-input-wrap {
+    display: flex;
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "swagger": {
+    "noImplicitAdditionalProperties": "throw-on-extras",
+    "info": {
+      "description": "A Login authorization and registration using jwt",
+      "version": "1.0.0",
+      "title": "User Login Auth and Registration"
+    },
+    "tags":[
+      {
+        "name":"ApplicationsModel",
+        "description":"Операции доступные с заявками"
+      },
+      {
+        "name":"PointsModel",
+        "description":"Операции для точек"
+      },
+      {
+        "name":"User",
+        "description":"Операции с пользователем"
+      }
+    ],
+    "outputDirectory": "./",
+    "entryFile": "./src/index.ts",
+    "securityDefinitions": {
+      "api_key": {
+        "type": "apiKey",
+        "name": "token",
+        "description": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluIiwiaWQiOjEsInJvbGUiOiJBRE1JTiIsImlhdCI6MTYyODc1OTMyN30.KesrCniRts_6y6ISjjCwWENZLzoAtYCQzg3OB-thDKs",
+        "in": "header"
+      }
+    },
+    "basePath": "/api"
+  },
+  "routes": {
+    "entryFile": "./src/index.ts",
+    "basePath": "/api",
+    "middleware": "express",
+    "authenticationModule": "./src/middleware/authMiddleware",
+    "routesDir": "./src/routes"
+  }
+}
