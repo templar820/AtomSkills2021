@@ -9,6 +9,9 @@ x-backend: &backend
   build:
     context: .
     dockerfile: _docker/backend/Dockerfile
+    args:
+      NODE_VERSION: ${NODE_VERSION}
+      DOCKER_HOST: ${POSTGRES_HOST}
   depends_on:
     - verdaccio
   image: backend
@@ -23,6 +26,9 @@ x-db_transactions: &db_transactions
   build:
     context: .
     dockerfile: _docker/db_transactions/Dockerfile
+    args:
+      NODE_VERSION: ${NODE_VERSION}
+      DOCKER_HOST: ${POSTGRES_HOST}
   depends_on:
     - verdaccio
     - postgres
@@ -34,12 +40,13 @@ x-db_transactions: &db_transactions
   env_file: .env
 
 
-
-
 x-frontend: &frontend
   build:
     context: .
     dockerfile: _docker/frontend/Dockerfile
+    args:
+      NODE_VERSION: ${NODE_VERSION}
+      DOCKER_HOST: ${POSTGRES_HOST}
   image: frontend
   container_name: "frontend"
   volumes:
@@ -53,9 +60,9 @@ services:
     container_name: "nginx"
     ports:
       - 3000:3000
-#    depends_on:
-#      frontend:
-#          condition: service_completed_successfully
+    depends_on:
+      frontend:
+          condition: service_completed_successfully
     volumes:
       - ./frontend/build:/frontend/build
       - ./nginx:/etc/nginx/conf.d
@@ -92,6 +99,9 @@ services:
     build:
       context: .
       dockerfile: _docker/verdaccio/Dockerfile
+      args:
+        NODE_VERSION: ${NODE_VERSION}
+        DOCKER_HOST: ${POSTGRES_HOST}
     command: node index.js
     volumes:
       - "./verdaccio:/verdaccio"
@@ -99,9 +109,9 @@ services:
   verdaccio:
     image: verdaccio/verdaccio
     container_name: "verdaccio"
-#    depends_on:
-#      config_db_verdaccio:
-#          condition: service_completed_successfully
+    depends_on:
+      config_db_verdaccio:
+          condition: service_completed_successfully
     restart: unless-stopped
     environment:
       - VERDACCIO_PORT=4873

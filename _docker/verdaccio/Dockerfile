@@ -1,4 +1,5 @@
-FROM node:14.16-buster-slim
+ARG NODE_VERSION
+FROM ${NODE_VERSION}
 
 ADD /verdaccio /verdaccio
 
