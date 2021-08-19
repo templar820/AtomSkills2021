@@ -92,7 +92,7 @@ const SimpleOrderList: React.FC<{services: any}> = (props) => {
         </FormControl>
 
       </div>
-      <div className="d-flex flex-row flex-grow-1">
+      <div className="d-flex flex-row flex-wrap">
         {
           !orders
             ? [...Array(12).keys()].map((value) => (

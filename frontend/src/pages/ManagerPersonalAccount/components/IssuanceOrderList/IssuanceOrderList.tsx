@@ -68,7 +68,7 @@ const IssuanceOrderList: React.FC<{services: any}> = (props) => {
         {/*  </form>*/}
         {/*</div>*/}
       </div>
-      <div className="d-flex flex-row">
+      <div className="d-flex flex-row flex-wrap">
         {
           !orders
             ? [...Array(12).keys()].map((value) => (
