@@ -3,7 +3,7 @@ start:
 stop:
 	docker-compose down
 production:
-	docker-compose up --scale db_init=0 --scale db_clean=0
+	docker-compose up -d --scale db_init=0 --scale db_clean=0
 build:
 	docker-compose up -d verdaccio
 	docker-compose build
