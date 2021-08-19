@@ -56,7 +56,9 @@ x-frontend: &frontend
 services:
   nginx:
     restart: unless-stopped
-    image: nginx:latest
+    build:
+      context: .
+      dockerfile: _docker/nginx/Dockerfile
     container_name: "nginx"
     ports:
       - 3000:3000
@@ -65,10 +67,8 @@ services:
           condition: service_completed_successfully
     volumes:
       - ./frontend/build:/frontend/build
-      - ./nginx:/etc/nginx/conf.d
     env_file:
       - .env
-
   postgres:
     image: postgres:latest
     container_name: "postgres"
