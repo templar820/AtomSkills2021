@@ -6,7 +6,7 @@ ADD /db_transactions /db_transactions
 WORKDIR /db_transactions
 
 #UBUNTU
-RUN npm set registry http://172.17.01:4873
+#RUN npm set registry http://172.17.01:4873
 #WINDOWS
 #RUN npm set registry http://host.docker.internal:4873
 RUN npm install

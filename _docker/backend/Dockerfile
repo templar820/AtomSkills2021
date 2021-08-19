@@ -6,7 +6,7 @@ ADD /backend /backend
 WORKDIR /backend
 
 #UBUNTU
-RUN npm set registry http://172.17.01:4873
+#RUN npm set registry http://172.17.01:4873
 #WINDOWS
 #RUN npm set registry http://host.docker.internal:4873
 
