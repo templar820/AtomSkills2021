@@ -11,7 +11,6 @@ x-backend: &backend
     dockerfile: _docker/backend/Dockerfile
     args:
       NODE_VERSION: ${NODE_VERSION}
-      DOCKER_HOST: ${POSTGRES_HOST}
   depends_on:
     - verdaccio
   image: backend
@@ -28,7 +27,6 @@ x-db_transactions: &db_transactions
     dockerfile: _docker/db_transactions/Dockerfile
     args:
       NODE_VERSION: ${NODE_VERSION}
-      DOCKER_HOST: ${POSTGRES_HOST}
   depends_on:
     - verdaccio
     - postgres
@@ -46,7 +44,6 @@ x-frontend: &frontend
     dockerfile: _docker/frontend/Dockerfile
     args:
       NODE_VERSION: ${NODE_VERSION}
-      DOCKER_HOST: ${POSTGRES_HOST}
   image: frontend
   container_name: "frontend"
   volumes:
@@ -101,7 +98,6 @@ services:
       dockerfile: _docker/verdaccio/Dockerfile
       args:
         NODE_VERSION: ${NODE_VERSION}
-        DOCKER_HOST: ${POSTGRES_HOST}
     command: node index.js
     volumes:
       - "./verdaccio:/verdaccio"

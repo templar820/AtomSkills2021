@@ -6,7 +6,7 @@ production:
 	docker-compose up --scale db_init=0 --scale db_clean=0
 build:
 	docker-compose up -d verdaccio
-	docker-compose build --scale frontend=0
+	docker-compose build
 	docker image prune -f
 	docker-compose down
 
