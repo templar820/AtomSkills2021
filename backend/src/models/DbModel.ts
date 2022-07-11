@@ -71,12 +71,6 @@ const Application = db.define('applications', {
   arrival_date: { type: DataTypes.DATE },
   price: { type: DataTypes.INTEGER },
   appl_return_id: { type: DataTypes.INTEGER },
-}, {
-  hooks: {
-    afterCreate: (instance) => saveDocument(instance, 'applications'),
-    afterDestroy: (instance) => deleteDocument(instance, 'applications'),
-    afterUpdate: (instance) => updateDocument(instance, 'applications'),
-  }
 });
 
 const ApplicationHistory = db.define('application_histories', {
