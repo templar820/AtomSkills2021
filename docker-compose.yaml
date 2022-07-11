@@ -26,7 +26,6 @@ x-db_transactions: &db_transactions
     args:
       NODE_VERSION: ${NODE_VERSION}
   depends_on:
-    - verdaccio
     - postgres
   image: db_transactions
   volumes:
