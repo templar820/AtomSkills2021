@@ -43,9 +43,7 @@ services:
       dockerfile: _docker/nginx/Dockerfile
     container_name: "nginx"
     ports:
-      - 3000:3000
-    depends_on:
-      - frontend
+      - 8080:8080
     volumes:
       - ./frontend/build:/frontend/build
     env_file:
