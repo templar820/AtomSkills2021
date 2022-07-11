@@ -35,18 +35,6 @@ x-db_transactions: &db_transactions
   env_file: .env
 
 
-x-frontend: &frontend
-  build:
-    context: .
-    dockerfile: _docker/frontend/Dockerfile
-    args:
-      NODE_VERSION: ${NODE_VERSION}
-  image: frontend
-  container_name: "frontend"
-  volumes:
-    - ./frontend:/frontend
-    - /frontend/node_modules
-
 services:
   nginx:
     restart: unless-stopped
@@ -100,7 +88,4 @@ services:
     <<: *db_transactions
     container_name: "db_clean"
     command: npm run clean
-  frontend:
-    <<: *frontend
-    command: npm run build
 
